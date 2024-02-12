@@ -9,7 +9,7 @@ popd
 
 if "%VCVARSALL%"=="" goto :fail
 
-"%VCVARSALL%" %*
+call "%VCVARSALL%" %*
 
 set VCVARSALL=
 goto :ok
