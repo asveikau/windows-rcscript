@@ -25,3 +25,4 @@ reg add HKCU\Environment /f /v PATH /t REG_SZ /d "!PATH!" > NUL
 REM endlocal, but persisting PATH.
 for /f "delims=" %%a in (""!PATH!"") do endlocal && set PATH=%%~a
 
+set GIT_SSH=%windir%\System32\OpenSSH\ssh.exe
